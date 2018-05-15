@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一个平庸的码农 | 你的第一个 Visual Studio Code 扩展</title>
+    <meta name="description" content="一个平庸的码农">
+    <link rel="icon" href="/static/logo.png" type="image/png" sizes="256x256">
+  <link rel="icon" href="/static/logo.svg" type="image/svg+xml" sizes="any">
+  <link rel="stylesheet" href="/static/fontello.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.26aa3aca.css" as="style"><link rel="preload" href="/assets/js/app.0a45ff1b.js" as="script"><link rel="preload" href="/assets/js/8.69c36941.js" as="script"><link rel="prefetch" href="/assets/js/27.9fcb215d.js"><link rel="prefetch" href="/assets/js/1.45f8bb8d.js"><link rel="prefetch" href="/assets/js/2.bf994553.js"><link rel="prefetch" href="/assets/js/3.338bbe13.js"><link rel="prefetch" href="/assets/js/4.e060e9a9.js"><link rel="prefetch" href="/assets/js/5.70ef3704.js"><link rel="prefetch" href="/assets/js/6.135ce61a.js"><link rel="prefetch" href="/assets/js/7.f5359c2d.js"><link rel="prefetch" href="/assets/js/9.5d2be0e1.js"><link rel="prefetch" href="/assets/js/10.d34b6e37.js"><link rel="prefetch" href="/assets/js/11.6db84992.js"><link rel="prefetch" href="/assets/js/12.33701182.js"><link rel="prefetch" href="/assets/js/13.e4160eec.js"><link rel="prefetch" href="/assets/js/14.2ae320c6.js"><link rel="prefetch" href="/assets/js/15.131b9097.js"><link rel="prefetch" href="/assets/js/16.2945f391.js"><link rel="prefetch" href="/assets/js/17.38280e73.js"><link rel="prefetch" href="/assets/js/18.c5433ac3.js"><link rel="prefetch" href="/assets/js/19.8b78eb06.js"><link rel="prefetch" href="/assets/js/20.d17b46ca.js"><link rel="prefetch" href="/assets/js/21.fab1c4fb.js"><link rel="prefetch" href="/assets/js/22.c3a6f120.js"><link rel="prefetch" href="/assets/js/23.cf5e76b7.js"><link rel="prefetch" href="/assets/js/24.9a8609f7.js"><link rel="prefetch" href="/assets/js/25.1f3d28ac.js"><link rel="prefetch" href="/assets/js/26.41cfdef6.js"><link rel="prefetch" href="/assets/js/28.2ffdd37d.js"><link rel="prefetch" href="/assets/js/29.4f506617.js"><link rel="prefetch" href="/assets/js/30.eb97053c.js"><link rel="prefetch" href="/assets/js/31.69479a66.js"><link rel="prefetch" href="/assets/js/32.c2f4df7d.js"><link rel="prefetch" href="/assets/js/33.73513e10.js"><link rel="prefetch" href="/assets/js/34.bcb8b6c9.js"><link rel="prefetch" href="/assets/js/35.212fa17c.js"><link rel="prefetch" href="/assets/js/36.a6c8d008.js"><link rel="prefetch" href="/assets/js/37.e5e5771d.js"><link rel="prefetch" href="/assets/js/38.b8fa5698.js"><link rel="prefetch" href="/assets/js/39.cb2c4151.js"><link rel="prefetch" href="/assets/js/40.542dd4ff.js"><link rel="prefetch" href="/assets/js/41.47928c59.js"><link rel="prefetch" href="/assets/js/42.c4a065be.js"><link rel="prefetch" href="/assets/js/43.b4013db9.js"><link rel="prefetch" href="/assets/js/44.7f301537.js"><link rel="prefetch" href="/assets/js/45.6f91d3c0.js"><link rel="prefetch" href="/assets/js/46.d70b48df.js"><link rel="prefetch" href="/assets/js/47.a5ee1f6b.js"><link rel="prefetch" href="/assets/js/48.225937f7.js"><link rel="prefetch" href="/assets/js/49.c5b2e981.js"><link rel="prefetch" href="/assets/js/50.c812b4fb.js"><link rel="prefetch" href="/assets/js/51.6e92ee37.js"><link rel="prefetch" href="/assets/js/52.b807e79f.js"><link rel="prefetch" href="/assets/js/53.69969303.js"><link rel="prefetch" href="/assets/js/54.b8c64a9c.js"><link rel="prefetch" href="/assets/js/55.03ea8a19.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.26aa3aca.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      一个平庸的码农
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/posts/" class="nav-link router-link-active">吹水</a></div><div class="nav-item"><a href="/books/" class="nav-link">图书</a></div><div class="nav-item"><a href="/projects/" class="nav-link">小玩意</a></div><div class="nav-item"><a href="/slides/" class="nav-link">投影片</a></div><div class="nav-item"><a href="/music/" class="nav-link">音乐</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">社区</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="https://github.com/myst729" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></li><li class="dropdown-item"><!----><a href="https://stackoverflow.com/users/1032492" target="_blank" rel="noopener noreferrer" class="nav-link">StackOverflow</a></li></ul></div></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/posts/" class="nav-link router-link-active">吹水</a></div><div class="nav-item"><a href="/books/" class="nav-link">图书</a></div><div class="nav-item"><a href="/projects/" class="nav-link">小玩意</a></div><div class="nav-item"><a href="/slides/" class="nav-link">投影片</a></div><div class="nav-item"><a href="/music/" class="nav-link">音乐</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">社区</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----><a href="https://github.com/myst729" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></li><li class="dropdown-item"><!----><a href="https://stackoverflow.com/users/1032492" target="_blank" rel="noopener noreferrer" class="nav-link">StackOverflow</a></li></ul></div></div><!----></nav><!----></div><div class="page"><div class="content"><h1 id="你的第一个-visual-studio-code-扩展"><a href="#你的第一个-visual-studio-code-扩展" aria-hidden="true" class="header-anchor">#</a> 你的第一个 Visual Studio Code 扩展</h1><blockquote><p>本文翻译自 Visual Studio Code 官方文档 <a href="https://code.visualstudio.com/Docs/extensions/example-hello-world" target="_blank" rel="noopener noreferrer">Example - Hello World</a>。Visual Studio Code（以下简称 VS Code）是微软基于 Electron 开发的代码编辑器，详情请自行搜索，在此不赘述。</p></blockquote><p>本文将指导你创建一个 VS Code 扩展（Hello World），并讲解 VS Code 扩展性的基本概念。</p><p>在这篇教程中，你将为 VS Code 添加一个新指令，显示一条简单的“Hello World”信息。接下来还会和 VS Code 编辑器交互，查询用户选中的文本。</p><h2 id="准备工作"><a href="#准备工作" aria-hidden="true" class="header-anchor">#</a> 准备工作</h2><p>请安装 <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">node.js</a> 并将其添加到系统环境变量 <code>$PATH</code>。</p><h2 id="创建新扩展"><a href="#创建新扩展" aria-hidden="true" class="header-anchor">#</a> 创建新扩展</h2><p>要为 VS Code 增加功能，最简单的方式是添加指令。指令会注册一个回调函数，可以通过指令面板或快捷键调用。</p><p>为了帮助你开始，我们编写了一个 Yeoman 生成器。安装 Yeoman 和 <a href="https://code.visualstudio.com/docs/tools/yocode" target="_blank" rel="noopener noreferrer">Yeoman VS Code Extension generator</a>，创建一个新扩展：</p><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> -g yo generator-code
+yo code
+</code></pre><p>这个扩展既可以用 <strong>TypeScript</strong> 编写，也可以用 <strong>JavaScript</strong>。在这个示例中，我们选择 <strong>TypeScript</strong>。</p><p><img src="/blog/images/2016/01/vscode-extension-generator.png" alt="指令生成器"></p><h2 id="运行你的扩展"><a href="#运行你的扩展" aria-hidden="true" class="header-anchor">#</a> 运行你的扩展</h2><ul><li>启动 VS Code，选择 <code>File</code> &gt; <code>Open...</code>，打开刚才生成的文件夹；</li><li>按 <kbd>F5</kbd>，或点击 <code>Debug</code> 图标，然后点击 <code>Start</code>；</li><li>VS Code 将以“扩展开发”模式启动一个新的实例，<strong>这个实例将启用你正在开发的扩展</strong>；</li><li>按 <kbd>F1</kbd>，执行 <code>Hello World</code> 指令；</li><li>恭喜！你刚刚创建并执行了你的第一个 VS Code 指令！</li></ul><p><img src="/blog/images/2016/01/vscode-extension-running.png" alt="在 VS Code 中运行扩展"></p><h2 id="扩展的结构"><a href="#扩展的结构" aria-hidden="true" class="header-anchor">#</a> 扩展的结构</h2><p>使用 Yeoman 生成器生成的扩展结构如下：</p><pre class="language-text"><code>.
+├── .gitignore
+├── .vscode                     // VS Code 集成
+│   ├── launch.json
+│   ├── settings.json
+│   └── tasks.json
+├── .vscodeignore
+├── README.md
+├── src                         // 源代码
+│   └── extension.ts            // 如果是 JavaScript 扩展则为 extension.js
+├── test                        // 测试
+│   ├── extension.test.ts       // 如果是 JavaScript 扩展则为 extension.test.js
+│   └── index.ts                // 如果是 JavaScript 扩展则为 index.js
+├── node_modules
+│   ├── vscode                  // 语言服务
+│   └── typescript              // TypeScript 编译器（针对 TypeScript 扩展）
+├── out                         // 编译输出（针对 TypeScript 扩展）
+│   ├── src
+│   │   ├── extension.js
+│   │   └── extension.js.map
+│   └── test
+│       ├── extension.test.js
+│       ├── extension.test.js.map
+│       ├── index.js
+│       └── index.js.map
+├── package.json                // 扩展清单
+├── tsconfig.json               // 如果是 JavaScript 扩展则为 jsconfig.json
+├── typings                     // 类型定义文件
+│   ├── node.d.ts               // Node.js API 链接
+│   └── vscode-typings.d.ts     // VS Code API 链接
+└── vsc-extension-quickstart.md // 扩展开发快速上手指南
+</code></pre><p>我们来挨个看看这些文件的用途：</p><h4 id="扩展清单：package-json"><a href="#扩展清单：package-json" aria-hidden="true" class="header-anchor">#</a> 扩展清单：<code>package.json</code></h4><ul><li>请阅读 <a href="https://code.visualstudio.com/docs/extensionAPI/extension-manifest" target="_blank" rel="noopener noreferrer"><code>package.json</code> 扩展清单参考</a>；</li><li>更多信息见 <a href="https://code.visualstudio.com/docs/extensionAPI/extension-points" target="_blank" rel="noopener noreferrer"><code>package.json</code> 的构造</a>；</li><li>每个 VS Code 扩展都必须包含一个描述扩展及其功能的 <code>package.json</code> 文件；</li><li>VS Code 会在启动时读取这个文件，并对每个部分立刻做出响应。</li></ul><p><strong>TypeScript 扩展的清单示例</strong></p><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;myFirstExtension&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;publisher&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;engines&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;vscode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^0.10.1&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;categories&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;Other&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;activationEvents&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;onCommand:extension.sayHello&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./out/src/extension&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;contributes&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;commands&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+            <span class="token property">&quot;command&quot;</span><span class="token operator">:</span> <span class="token string">&quot;extension.sayHello&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Hello World&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;vscode:prepublish&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node ./node_modules/vscode/bin/compile&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;compile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node ./node_modules/vscode/bin/compile -watch -p ./&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;typescript&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.6.2&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;vscode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.10.x&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><blockquote><p><strong>笔记：</strong> JavaScript 扩展不需要编译，因此不必填写 <code>scripts</code> 字段。</p></blockquote><ul><li>这个 package.json 对扩展作出如下描述：</li><li>在指令面板（<kbd>F1</kbd>）定义了一个可调用指令 <code>&quot;extension.sayHello&quot;</code> 的入口 <code>&quot;Hello world&quot;</code>；</li><li>调用指令 <code>&quot;extension.sayHello&quot;</code> 时加载（<code>activationEvents</code>）；</li><li>JavaScript 代码的主文件是 <code>&quot;./out/src/extension.js&quot;</code>。</li></ul><blockquote><p><strong>笔记：</strong> VS Code <strong>不会</strong>在启动时主动加载扩展。扩展必须通过 <code>activationEvents</code> 属性声明其激活（加载）条件。</p></blockquote><h4 id="代码"><a href="#代码" aria-hidden="true" class="header-anchor">#</a> 代码</h4><p>生成的扩展代码在 <code>extension.ts</code>（如果是 JavaScript 扩展则为 <code>extension.js</code>）文件中：</p><pre class="language-text"><code>// 'vscode' 模块包含了 VS Code 扩展 API
+// 以 vscode 为标识符引入这个模块
+import * as vscode from 'vscode';
+
+// 扩展激活时会调用这个方法
+// 扩展会在指令首次执行时激活
+export function activate(context: vscode.ExtensionContext) {
+
+    // 在控制台输出诊断信息（console.log）和错误（console.error）
+    // 这行代码只会在扩展激活时执行一次
+    console.log('Congratulations, your extension &quot;my-first-extension&quot; is now active!');
+
+    // 指令已经在 package.json 文件中定义了
+    // 现在通过 registerCommand 方法给出指令的实现
+    // commandId 参数必须与 package.json 文件中的 command 字段对应
+    var disposable = vscode.commands.registerCommand('extension.sayHello', () =&gt; {
+        // 每次执行指令时，都会执行这里的代码
+
+        // 显示一条消息
+        vscode.window.showInformationMessage('Hello World!');
+    });
+    
+    context.subscriptions.push(disposable);
+}
+</code></pre><ul><li>每一个扩展都要从主文件导出一个 <code>activate()</code> 函数，它<strong>只会被 VS Code 调用一次</strong>，即 <code>package.json</code> 文件中描述的 <code>activationEvents</code> 发生时；</li><li>如果一个扩展使用了操作系统资源（比如生成进程），可以从主文件导出一个执行清理工作的 <code>deactivate()</code> 函数，VS Code 会在关闭时调用这个它；</li><li>这个扩展引入了 <code>vscode</code> API，然后注册了一个指令，并关联了一个函数。该函数会在指令 <code>&quot;extension.sayHello&quot;</code> 被调用时执行。指令的实现会在 VS Code 中显示一条“Hello world”消息。</li></ul><blockquote><p><strong>笔记：</strong><code>package.json</code> 文件的 <code>contributes</code> 部分会在指令面板中添加入口。<code>extension.ts/.js</code> 则定义了 <code>&quot;extension.sayHello&quot;</code> 的实现。</p></blockquote><blockquote><p><strong>笔记：</strong> 对于 TypeScript 扩展，VS Code 会在运行时加载并执行生成的 <code>out/src/extension.js</code> 文件。</p></blockquote><h4 id="其他文件"><a href="#其他文件" aria-hidden="true" class="header-anchor">#</a> 其他文件</h4><ul><li><code>.vscode/launch.json</code> 定义了 VS Code 将以扩展开发模式启动。它还通过 <code>preLaunchTask</code> 指向 <code>.vscode/tasks.json</code> 中定义的一个运行 TypeScript 编译器的任务；</li><li><code>.vscode/settings.json</code> 默认不包含 <code>out</code> 文件夹。你可以编辑想要隐藏的文件类型；</li><li><code>.gitignore</code> 告诉 Git 要忽略哪些模式的文件；</li><li><code>.vscodeignore</code> 告诉打包工具在发布扩展时要忽略哪些文件；</li><li><code>README.md</code> 文件会向 VS Code 用户描述你的扩展；</li><li><code>vsc-extension-quickstart.md</code> 文件是一个快速上手指南；</li><li>你可以把扩展的单元测试放进 <code>test/extension.test.ts</code>，通过 VS Code API 运行测试（请阅读<a href="https://code.visualstudio.com/docs/extensions/testing-extensions" target="_blank" rel="noopener noreferrer">测试你的扩展</a>）。</li></ul><h2 id="运行你的扩展-2"><a href="#运行你的扩展-2" aria-hidden="true" class="header-anchor">#</a> 运行你的扩展</h2><p>现在我们把扩展中包含的这些文件都搞清楚了，接下来就是扩展如何被激活：</p><ul><li>扩展开发实例会找到扩展并读取它的 <code>package.json</code> 文件；</li><li>当你按 <kbd>F1</kbd> 时，已注册的指令会显示在指令面板中；</li><li>现在这个列表里有一个 <code>&quot;Hello world&quot;</code> 入口，是在 <code>package.json</code> 中定义的；</li><li>选择这个 <code>&quot;Hello world&quot;</code> 指令时，<code>&quot;extension.sayHello&quot;</code> 指令将被调用：
+<ul><li>创建激活事件 <code>&quot;onCommand:extension.sayHello&quot;</code>；</li><li>所有在其 <code>activationEvents</code> 中列出这个激活事件的扩展都将被激活；
+<ul><li><code>./out/src/extension.js</code> 文件被载入 JavaScript 虚拟机；</li><li>VS Code 从中找到导出的 <code>activate</code> 函数并调用它；</li><li>注册 <code>&quot;extension.sayHello&quot;</code> 指令并定义其实现；</li></ul></li></ul></li><li><code>&quot;extension.sayHello&quot;</code> 指令的实现函数将被调用；</li><li>指令的实现会显示一条“Hello World”消息。</li></ul><h2 id="调试扩展"><a href="#调试扩展" aria-hidden="true" class="header-anchor">#</a> 调试扩展</h2><p>在注册的指令中设置一个断点，然后在 VS Code 的扩展开发实例中运行 <code>&quot;Hello World&quot;</code> 指令。</p><p><img src="/blog/images/2016/01/vscode-extension-debug.png" alt="调试扩展"></p><blockquote><p><strong>笔记：</strong> 由于 VS Code 调试器支持源码映射，因此对于 TypeScript 扩展，尽管 VS Code 加载并执行的是 <code>out/src/extension.js</code>，你还是可以借助源码映射文件 <code>out/src/extension.js.map</code> 调试原始的 TypeScript 代码。</p></blockquote><blockquote><p><strong>技巧：</strong> 调试控制台会显示你记录的所有消息。</p></blockquote><p>进一步了解扩展<a href="https://code.visualstudio.com/docs/extensions/debugging-extensions" target="_blank" rel="noopener noreferrer">开发环境</a>。</p><h2 id="一点小变化"><a href="#一点小变化" aria-hidden="true" class="header-anchor">#</a> 一点小变化</h2><p>在 <code>extension.ts</code>（如果是 JavaScript 扩展则为 <code>extension.js</code>）中，试着把 <code>extension.sayHello</code> 指令的实现替换为显示编辑器中选中的字符数：</p><pre class="language-text"><code>var editor = vscode.window.activeTextEditor;
+if (!editor) {
+    return; // 没有打开编辑器
+}
+
+var selection = editor.selection;
+var text = editor.document.getText(selection);
+
+// 显示一条消息
+vscode.window.showInformationMessage('Selected characters: ' + text.length);
+</code></pre><blockquote><p><strong>技巧：</strong> 修改了扩展源代码后，需要重启 VS Code 的扩展开发实例。你可以点击 VS Code 主实例顶部的 Restart 按钮，或在副实例中按 <kbd>Ctrl</kbd>+<kbd>R</kbd>（Mac：<kbd>Cmd</kbd>+<kbd>R</kbd>）。</p></blockquote><p><img src="/blog/images/2016/01/vscode-extension-selection-length.png" alt="运行改进的扩展"></p><h2 id="本地安装扩展"><a href="#本地安装扩展" aria-hidden="true" class="header-anchor">#</a> 本地安装扩展</h2><p>目前为止，你编写的扩展还只能在特殊的 VS Code 扩展开发实例中运行。把它复制到操作系统的扩展文件夹中，才能在所有的 VS Code 实例中运行：</p><ul><li>Windows：<code>%USERPROFILE%\.vscode\extensions</code></li><li>Mac/Linux：<code>$HOME/.vscode/extensions</code></li></ul><h2 id="发布你的扩展"><a href="#发布你的扩展" aria-hidden="true" class="header-anchor">#</a> 发布你的扩展</h2><p>请阅读<a href="https://code.visualstudio.com/docs/tools/vscecli" target="_blank" rel="noopener noreferrer">分享一个扩展</a>。</p><h2 id="下一步"><a href="#下一步" aria-hidden="true" class="header-anchor">#</a> 下一步</h2><p>本文介绍了如何编写一个非常简单的扩展。<a href="https://code.visualstudio.com/docs/extensions/example-word-count" target="_blank" rel="noopener noreferrer">单词计数器示例</a>是一个更详尽的示例，展示了如何针对特定的语言（Markdown），监听编辑器文档的变更事件。</p><p>如果你想进一步了解扩展 API，可以阅读以下内容：</p><ul><li><a href="https://code.visualstudio.com/docs/extensionAPI/overview" target="_blank" rel="noopener noreferrer">扩展 API 概览</a> - 全面了解 VS Code 的扩展性模型；</li><li><a href="https://code.visualstudio.com/docs/extensions/patterns-and-principles" target="_blank" rel="noopener noreferrer">API 模式与原则</a> - VS Code 扩展性所遵循的指导性模式与原则；</li><li><a href="https://code.visualstudio.com/docs/extensionAPI/extension-points" target="_blank" rel="noopener noreferrer">构造</a> - 深入了解 VS Code 的构造；</li><li><a href="https://code.visualstudio.com/docs/extensionAPI/activation-events" target="_blank" rel="noopener noreferrer">激活事件</a> - VS Code 激活事件参考。</li></ul><h2 id="常见问题"><a href="#常见问题" aria-hidden="true" class="header-anchor">#</a> 常见问题</h2><p>暂无。</p></div><!----><!----></div></div></div>
+    <script src="/assets/js/8.69c36941.js" defer></script><script src="/assets/js/app.0a45ff1b.js" defer></script>
+  </body>
+</html>
